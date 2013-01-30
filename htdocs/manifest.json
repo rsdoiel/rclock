@@ -1,0 +1,13 @@
+{
+  "name": "rclock",
+  "description": "A YUI web app demo.",
+  "launch_path": "/",
+  "icons": {
+    "128": "/img/icon-128.png"
+  },
+  "developer": {
+    "name": "It is just me learning YUI 3",
+    "url": "http://rsdoiel.github.com"
+  },
+  "default_locale": "en"
+}
