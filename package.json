@@ -1,0 +1,24 @@
+{
+  "name": "rclock",
+  "version": "0.0.0",
+  "description": "A web app so I can learn YUI 3",
+  "main": "server.js",
+  "scripts": {
+  	"test": "tests/server_test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/rsdoiel/rclock.git"
+  },
+  "keywords": [
+    "demo"
+  ],
+  "author": "R. S. Doiel, <rsdoiel@gmail.com>",
+  "license": "BSD",
+  "readmeFilename": "README.md",
+  "gitHead": "3258916ae4e0891f578bd0fbaae70b5d4914c606",
+  "dependencies" : {
+    "yui": ">= 3.8",
+    "opt": ">= 0.1"
+  }	
+}
