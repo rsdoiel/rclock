@@ -18,7 +18,13 @@
   "readmeFilename": "README.md",
   "gitHead": "3258916ae4e0891f578bd0fbaae70b5d4914c606",
   "dependencies" : {
-    "yui": ">= 3.8",
-    "opt": ">= 0.1"
-  }	
+    "yui": "3.8.x",
+    "opt": "0.1.11",
+    "mimetype": "0.0.4",
+    "reltime": "0.0.1"
+  },
+  "engines": {
+  	"node": "0.8.x",
+	"npm": "1.2.x"
+  }
 }
