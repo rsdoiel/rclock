@@ -3,7 +3,12 @@
   "description": "A YUI web app demo.",
   "launch_path": "/",
   "icons": {
+    "128": "/img/icon-16.png"
+    "128": "/img/icon-32.png"
+    "128": "/img/icon-48.png"
+    "128": "/img/icon-64.png"
     "128": "/img/icon-128.png"
+    "128": "/img/icon-256.png"
   },
   "developer": {
     "name": "It is just me learning YUI 3",

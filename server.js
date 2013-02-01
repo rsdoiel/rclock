@@ -25,16 +25,32 @@ var config = {
 			"/": "htdocs/index.html",
 			"/index.html": "htdocs/index.html",
 			"/about.html": "htdocs/about.html",
-			"/status.html": "htdocs/status.html",
+			/* "/status.html": "htdocs/status.html", */
 			"/js/rclock.js": "htdocs/js/rclock.js",
-			"/css/rclock.css": "htdocs/js/rclock.css",
+			"/css/rclock.css": "htdocs/css/rclock.css",
 			"/favicon.ico": "htdocs/favicon.ico",
 			"/img/icon-16.png": "htdocs/img/icon-16.png",
+			"/img/icon-32.png": "htdocs/img/icon-32.png",
 			"/img/icon-48.png": "htdocs/img/icon-48.png",
-			"/img/icon-128.png": "htdocs/img/icon-128.png"
+			"/img/icon-128.png": "htdocs/img/icon-128.png",
+			"/img/icon-256.png": "htdocs/img/icon-256.png"
 		}
 	},
 	static_content = {};
+
+
+var sanity_check = function (configuration) {
+	var minimum_config = [ 'port', 'static_content' ];
+
+	minimum_config.forEach(function (ky) {
+		if (config[ky] === undefined) {
+			opt.usage("Missing configuration for " + ky, 1); 
+		}
+	});
+	if (Object.keys(config.static_content).length < 1) {
+		opt.usage("No static content defined.", 1);
+	}
+};
 
 var update = function (route, filename) {
 	if (static_content[route] === undefined) {
@@ -99,20 +115,12 @@ var monitor = function (route, filename) {
 	});
 };
 
-var sanity_check = function (configuration) {
-	var minimum_config = [ 'port', 'static_content' ];
-	
-	minimum_config.forEach(function (ky) {
-		if (config[ky] === undefined) {
-			opt.usage("Missing configuration for " + ky, 1); 
-		}
-	});
-	if (Object.keys(config.static_content).length < 1) {
-		opt.usage("No static content defined.", 1);
-	}
-};
+Object.keys(config.static_content).forEach(function (route) {
+	monitor(route, config.static_content[route]);
+});
 
-opt.config(config, [ "/etc/rclock" ]);
+
+opt.config(config, [ "/etc/rclock.conf" ]);
 opt.consume(true);
 
 opt.optionHelp("USAGE: " + path.basename(process.argv[1]),
@@ -176,32 +184,27 @@ opt.option(["-h", "--help"], function () {
 opt.optionWith(process.argv);
 sanity_check(config);
 
-Object.keys(config.static_content).forEach(function (route) {
-	monitor(route, config.static_content[route]);
-});
-
 http.createServer(function (request, response) {
-	if (request.url) {
-		YUI().use(function (Y) {
-			var html = "Not found.", parts = url.parse(request.url, true);
-
+	YUI().use("handlebars", function (Y) {
+		var html = "Not found.", parts = url.parse(request.url, true);
+		if (request.url) {
 			if (static_content[parts.pathname] === undefined) {
-				Y.log("404 " + request.url, "warning");
+				html = "Not found.";
+				console.log("404 " + request.url);
 				response.writeHead(404, {
 					'Content-Size': html.length,
 					'Content-Type': 'text/plain'
 				});
 				response.end(html);
 			} else {
-				Y.log("200 " + request.url, "info");
 				html = static_content[parts.pathname];
+				console.log("200 " + request.url);
 				response.writeHead(200, {
-					"Content-Size": html.length,
+					"Content-Size": html.size,
 					"Content-Type": "text/html"
 				});
-				response.end(html);
+				response.end(html.src);
 			}
-		});
-	}
+		}
+	});
 }).listen(config.port, config.hostname);
-
