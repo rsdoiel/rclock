@@ -10,4 +10,4 @@ YUI().use("node", "datetype-date", "io", function (Y) {
 	Y.log("Hello World!", "info");
 	clock.set("text", Y.Date.format(new Date(), {format: "%T %p"}));
 
-}):
+});
