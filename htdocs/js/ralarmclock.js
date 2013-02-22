@@ -1,7 +1,7 @@
 
 /*jslint browser: true */
 /*global YUI */
-YUI().use("node", "datetype-date", "io", function (Y) {
+YUI().use("node", "datatype-date", "io", function (Y) {
 	"use strict";
 	var weather = Y.one("#weather"),
 		clock = Y.one("#clock"),
