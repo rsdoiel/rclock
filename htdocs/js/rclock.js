@@ -7,7 +7,12 @@ YUI().use("node", "datatype-date", "io", function (Y) {
 		clock = Y.one("#clock"),
 		alarms = Y.one("alarms");
 
-	Y.log("Hello World!", "info");
+	Y.log("Setting up clock and weather feed", "info");
 	clock.set("text", Y.Date.format(new Date(), {format: "%T %p"}));
+
+	setInterval(function () {
+		clock.set("text", Y.Date.format(new Date(), {format: "%T %p"}));
+	}, 1000);
+
 
 });
