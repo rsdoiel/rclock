@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+	<widget xmlns = "http://www.w3.org/ns/widgets"
+		xmlns:gap = "http://phonegap.com/ns/1.0"
+		id        = "com.phonegap.example"
+		versionCode="10" 
+		version   = "1.0.0">
+
+	<!-- versionCode is optional and Android only -->
+	<preference name="permissions" value="none"/>
+	<preference name="stay-in-webview" value="false" />
+	<preference name="detect-data-types" value="true" />
+	<preference name="exit-on-suspend" value="true" />
+	<preference name="load-url-timeout" value="10000" />
+	<icon src="RedTruck.png" />
+
+	<name>Ralarm Clock</name>
+
+	<description>Ralarm Clock is a program for me to learn YUI 3 and Phonegap. ralarmclock is a demo alarm clock that will feature a weather feed, track your wake and sleep schedule.</description>
+
+	<author href="https://rsdoiel.github.com" email="rsdoiel@gmail.com">R. S. Doiel</author>
+</widget>
