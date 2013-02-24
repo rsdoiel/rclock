@@ -25,6 +25,6 @@ YUI().use("node", "io", "datatype-date",  "yql", function (Y) {
 	// platform to see how to keep from burning battery
 	// unnecessarily
 	setInterval(function () {
-		clock.setHTML(Y.Date.format(new Date(), {format: "%H:%I:%S %p"}));
+		clock.setHTML(Y.Date.format(new Date(), {format: "%l:%I:%S %P"}));
 	}, clock_rate);
 });

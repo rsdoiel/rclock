@@ -2,24 +2,32 @@
 <html lang="en">
 	<head>
 		<title>R Clock</title>
+		<!-- START: Master Stylesheet. -->
 		<link rel="stylesheet" href="css/style.css" />
+		<!-- END: Master Stylesheet -->
 	</head>
 	<body>
-		<header>R Clock</header>
-		<section id="weather">
-			Weather goes here
-		</section>
-		<section id="clock">
-			Time goes here
-		</section>
-		<section id="alarms">
-			Alarms goes here
-		</section>
-		<pre id="debug"></pre>
-		<footer>
+		<header class="yui3-u-3-3">R Clock</header>
+		<div class="yui3-g">
+			<div id="weather" class="yui3-u-1-3">
+				Weather goes here
+			</div>
+			<div id="clock" class="yui3-u-1-3">
+				Time goes here
+			</div>
+			<div id="alarms" class="yui3-u-1-3">
+				Alarms goes here
+			</div>
+		</div>
+
+		<!-- START: DEBUG element -->
+		<pre id="debug" class="yui3-3-3"></pre>
+		<!-- END: DEBUG element -->
+		<footer class="yui3-u-3-3">
 		copyright &copy; 2013 R. S. Doiel<br />
 		all rights reserved<br />
-		Released under the <a href="http://opensource.org/licenses/BSD-2-Clause">Simplified BSD License</a>.
+		Released under the <a href="http://opensource.org/licenses/BSD-2-Clause" target="_blank">Simplified BSD License</a>.
+		Source Code available at <a href="http://github.com/rsdoiel/rclock.git" target="_blank">github.com/rsdoiel/rclock</a>
 		</footer>
 		<script src="http://yui.yahooapis.com/3.8.1/build/yui/yui-min.js"></script>
 		<script src="js/rclock.js"></script>
