@@ -7,7 +7,7 @@ YUI().use("node", "io", "datatype-date", "yql", "template", function (Y) {
 	var micro = new Y.Template(),
 		clock = Y.one("#clock"),
 		pre = Y.one("pre"),
-		clock_rate = 1000,
+		clock_rate = 60000,
 		weather = Y.one("#weather"),
 		location = Y.one("#location"),
 		forecase = Y.one("#forecast"),
@@ -26,7 +26,7 @@ YUI().use("node", "io", "datatype-date", "yql", "template", function (Y) {
 			var forecasts = weather_r.query.results.channel.item.forecast || {},
 				output = [];	
 
-			location.append(Y.Lang.sub(forecastLI, {
+			location.set("html", Y.Lang.sub(forecastLI, {
 				day: "<b>Day</b>",
 				high: "<b>Hi</b>",
 				low: "<b>Lo</b>",
@@ -42,6 +42,6 @@ YUI().use("node", "io", "datatype-date", "yql", "template", function (Y) {
 	// platform to see how to keep from burning battery
 	// unnecessarily
 	setInterval(function () {
-		clock.setHTML(Y.Date.format(new Date(), {format: "%l:%I:%S %P"}));
+		clock.setHTML(Y.Date.format(new Date(), {format: "%l:%I %P"}));
 	}, clock_rate);
 });
