@@ -1,9 +1,15 @@
 //
-// rclock.js
+// rclock.js - browser side process for running the clock and pulling the weather data.
+//
+// @author R. S. Doiel, <rsdoiel@gmail.com>
+// copyright (c) 2013, R. S. Doiel
+// all rights reserved
+// Released under the BSD 2 Clause License
+// See: http://opensource.org/licenses/BSD-2-Clause
 //
 /*jslint browser: true */
 /*global YUI */
-YUI({debug: true}).use("node", "io", "datatype-date", "yql", "template", function (Y) {
+YUI().use("node", "io", "datatype-date", "yql", "template", function (Y) {
 	var micro = new Y.Template(),
 		clock = Y.one("#clock"),
 		pre = Y.one("pre"),
@@ -13,7 +19,6 @@ YUI({debug: true}).use("node", "io", "datatype-date", "yql", "template", functio
 		forecasts = Y.one("#forecasts"),
 		alarms = Y.one("#alarms");
 
-	//Y.YQL('select latitude, longitude, uzip, woeid, city, county, state from geo.placefinder where name = "91350"', function (geo_r) {
 	Y.YQL('select woeid, city from geo.placefinder where name = "91350"', function (geo_r) {
 		var location_info = geo_r.query.results.Result || {};
 		var forecastLI = "<li>{day} {high}/{low} {text}</li>";
@@ -38,13 +43,9 @@ YUI({debug: true}).use("node", "io", "datatype-date", "yql", "template", functio
 			forecasts.setHTML(forecast_text.join("\n"));
 		});
 	});
-	// FIXME: Need to only run the setInterval if the page
-	// is visible. Check the Moz/Chrome APIs for their Firefox OS/Chrome OS
-	// platforms to see how to keep from burning battery
-	// unnecessarily
+	clock.setHTML(Y.Date.format(new Date(), {format: "%l:%M %P"}));
 	setInterval(function () {
 		var t = new Date();
-		Y.log(t, "debug");
 		clock.setHTML(Y.Date.format(t, {format: "%l:%M %P"}));
 	}, clock_rate);
 });
