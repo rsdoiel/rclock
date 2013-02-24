@@ -1,0 +1,12 @@
+// Color scheme settings
+Y.colorspace.schemes.color-plus-gray = {
+    high:       {h: 0, s: -99, l: 60},
+    normal:     {h: 0, s: -99, l: 75},
+    low:        {h: 0, s: -99, l: 80},
+    background: {h: 0, s: -99, l: 90}
+};
+// Other skin settings
+Text contrast: 150%
+Border radius: 100%
+Horiz. padding: NaN%
+Vert. padding: 98%
