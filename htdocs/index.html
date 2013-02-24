@@ -2,21 +2,23 @@
 <html lang="en">
 	<head>
 		<title>R Clock</title>
-		<!-- START: Master Stylesheet. -->
+		<!-- Master Stylesheet, imports other stylesheets -->
 		<link rel="stylesheet" href="css/style.css" />
-		<!-- END: Master Stylesheet -->
 	</head>
 	<body>
 		<header class="yui3-u-3-3">R Clock</header>
 		<div class="yui3-g">
 			<div id="weather" class="yui3-u-1-3">
-				Weather goes here
+				<div id="location">
+				Checking weather.
+				</div>
+				<ul id="forecast"></ul>
 			</div>
 			<div id="clock" class="yui3-u-1-3">
-				Time goes here
+				Getting the time.
 			</div>
 			<div id="alarms" class="yui3-u-1-3">
-				Alarms goes here
+				Alarms, unavailable.
 			</div>
 		</div>
 

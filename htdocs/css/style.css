@@ -28,6 +28,11 @@ footer {
 	font-size: 1em;
 	padding-top: 1em;
 	padding-bottom: 0.5em;
+	text-overflow: ellipsis;
+}
+
+#weather li {
+	list-style: none;
 }
 
 #clock {
