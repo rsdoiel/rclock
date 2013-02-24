@@ -16,7 +16,7 @@ var express = require("express"),
 	YUI = require("yui").YUI,
 	port = process.env.PORT || 3000,
     	host = process.env.HOPSTNAME || process.env.IP || "localhost",
-	template = fs.readFileSync(path.join("htdocs", "index.template")).toString();
+	template = fs.readFileSync(path.join("htdocs", "index.html")).toString();
 
 
 
@@ -26,7 +26,7 @@ YUI({useSync: true, debug: true}).use("io-base", "datatype-date", "yql", functio
 	// Watch the template file for changes
 	fs.watchFile(path.join("htdocs", "index.template"), function (curr, prev) {
 		if (curr.mtime !== prev.mtime) {
-			fs.readFile(path.join("htdocs", "index.template"), function (err, buf) {
+			fs.readFile(path.join("htdocs", "index.html"), function (err, buf) {
 				if  (err) {
 					Y.log(err, "error");
 					return;
@@ -82,8 +82,8 @@ YUI({useSync: true, debug: true}).use("io-base", "datatype-date", "yql", functio
 	 * Main: Setup and run  the web server
 	 */
 	server.use(express.logger());
-	server.use(express.static(path.join(__dirname, "htdocs")));
 	server.get("/", render_page);
+	server.use(express.static(path.join(__dirname, "htdocs")));
 	server.listen(port, host);
 	Y.log("Starting up web server on port " + host + ":" + port, "info");
 });
