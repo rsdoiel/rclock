@@ -19,8 +19,23 @@ var express = require("express"),
 	template = fs.readFileSync(path.join("htdocs", "index.template")).toString();
 
 
-YUI({useSync: true}).use("io-base", "datatype-date", "yql", function (Y) {
+
+YUI({useSync: true, debug: true}).use("io-base", "datatype-date", "yql", function (Y) {
 	var server = express();
+
+	// Watch the template file for changes
+	fs.watchFile(path.join("htdocs", "index.template"), function (curr, prev) {
+		if (curr.mtime !== prev.mtime) {
+			fs.readFile(path.join("htdocs", "index.template"), function (err, buf) {
+				if  (err) {
+					Y.log(err, "error");
+					return;
+				}
+				Y.log("reloading template " + curr.mtime, "info");
+				template = buf.toString();
+			});
+		}
+	});
 
 	Y.log("Loading", "info");
 	/*
@@ -28,8 +43,7 @@ YUI({useSync: true}).use("io-base", "datatype-date", "yql", function (Y) {
 	 */
 	var render_page = function (request, response) {
 		Y.YQL('select woeid, city from geo.placefinder where name = "91350"', function (geo_r) {
-			var time_text = Y.Date.format(new Date(), {format: "%l:%I %P"}),
-				location_info = geo_r.query.results.Result || {},
+			var location_info = geo_r.query.results.Result || {},
 				location_text = location_info.neighborhood ||
 						location_info.city ||
 						location_info.county ||
@@ -57,7 +71,7 @@ YUI({useSync: true}).use("io-base", "datatype-date", "yql", function (Y) {
 				var page = Y.Lang.sub(template, {
 					location: location_text,
 					forecasts: forecasts_text.join("\n"),
-					time: time_text
+					time: Y.Date.format(new Date(), {format: "%l:%M %P"})
 				});
 				response.status(200).send(page);
 			});

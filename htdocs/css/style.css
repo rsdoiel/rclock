@@ -11,6 +11,10 @@
  * rclock style customization here.
  */
 
+body {
+	font-family: Happy Monkey, sans;
+}
+
 header {
 	text-align: center;
 	font-size: 1em;
@@ -27,6 +31,7 @@ footer {
 #weather {
 	font-size: 1em;
 	padding-top: 1em;
+	padding-left: 0.25em;
 	padding-bottom: 0.5em;
 	text-overflow: ellipsis;
 }
@@ -36,14 +41,19 @@ footer {
 }
 
 #clock {
+	text-align: center;
+	color: #990000;
+	background-color: #FFFFFF;
 	font-size: 4em;
-	padding-top: 1em;
-	padding-bottom: 0.5em;
+	padding: 0.25em;
+	border: 1px solid #FFCC00;
+	border-radius: 12%;
 }
 
 #alarms {
 	font-size: 1em;
 	padding-top: 1em;
+	padding-left: 0.25em;
 	padding-bottom: 0.5em;
 }
 

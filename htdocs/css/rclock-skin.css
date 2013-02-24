@@ -30,7 +30,7 @@
 }
 
 /* autocomplete-list-skin.css   (sam) ****************************************************/
-.yui3-skin-mine .yui3-aclist-content {
+.yui3-skin-rclock .yui3-aclist-content {
     background-color: #ededed;
     border: solid 1px #dedede;
     color: #404040;
@@ -39,12 +39,12 @@
     box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.15);
 }
 
-.yui3-skin-mine .yui3-aclist-item-hover {
+.yui3-skin-rclock .yui3-aclist-item-hover {
     background-color: #d6d6d6;
     color: #262626;
 }
 
-.yui3-skin-mine .yui3-aclist-item-active {
+.yui3-skin-rclock .yui3-aclist-item-active {
     background-color: #b6b4b4;
     color: #030303;
     outline: none;
@@ -54,7 +54,7 @@
 /*  ****************************************************/
 
 
-.yui3-skin-mine .yui3-button {
+.yui3-skin-rclock .yui3-button {
     /* Structure */
     display: inline-block;
     *display: inline; /*IE 6/7*/
@@ -117,7 +117,7 @@
     transition: 0.1s linear box-shadow;
 }
 
-.yui3-skin-mine a.yui3-button {
+.yui3-skin-rclock a.yui3-button {
     color: #080808;
 
 /*
@@ -127,8 +127,8 @@
     text-decoration:none;
 }
 
-.yui3-skin-mine .yui3-button-hover,
-.yui3-skin-mine .yui3-button:hover {
+.yui3-skin-rclock .yui3-button-hover,
+.yui3-skin-rclock .yui3-button:hover {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#26000000', GradientType=0);
 /*
     background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), color-stop(40%, rgba(0,0,0, 0.05)), to(rgba(0,0,0, 0.15)));
@@ -149,8 +149,8 @@
     color: #030303;
 }
 
-.yui3-skin-mine .yui3-button-active,
-.yui3-skin-mine .yui3-button:active {
+.yui3-skin-rclock .yui3-button-active,
+.yui3-skin-rclock .yui3-button:active {
     border: inset 1px solid #999;  /*IE 6/7/8*/
     border: none rgba(0, 0, 0, 0);  /*IE9 + everything else*/
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1A000000', endColorstr='#26000000', GradientType=0);
@@ -179,10 +179,10 @@
     box-shadow: 0 0 1px rgba(0,0,0, 0.25) inset, 0 2px 4px rgba(0,0,0, 0.30) inset;
 }
 
-.yui3-skin-mine .yui3-button[disabled],
-.yui3-skin-mine .yui3-button-disabled,
-.yui3-skin-mine .yui3-button-disabled:hover,
-.yui3-skin-mine .yui3-button-disabled:active {
+.yui3-skin-rclock .yui3-button[disabled],
+.yui3-skin-rclock .yui3-button-disabled,
+.yui3-skin-rclock .yui3-button-disabled:hover,
+.yui3-skin-rclock .yui3-button-disabled:active {
     cursor: default;
     background-image: none;
     filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
@@ -201,19 +201,19 @@
 }
 
 /* Firefox: Get rid of the inner focus border */
-.yui3-skin-mine .yui3-button::-moz-focus-inner{
+.yui3-skin-rclock .yui3-button::-moz-focus-inner{
     padding: 0;
     border: 0;
 }
 
 /* Firefox: Add a border around a focused button */
-.yui3-skin-mine .yui3-button:-moz-focusring {
+.yui3-skin-rclock .yui3-button:-moz-focusring {
     outline: thin dotted;
 }
 
 
-.yui3-skin-mine .yui3-button-primary,
-.yui3-skin-mine .yui3-button-selected {
+.yui3-skin-rclock .yui3-button-primary,
+.yui3-skin-rclock .yui3-button-selected {
     background-color: #9e0000;
     color: #ffffff;
     -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.25) inset, 0 2px 2px rgba(255, 255, 255, 0.17) inset, 0 1px 2px rgba(0, 0, 0, 0.15);
@@ -222,8 +222,8 @@
     border-color: #cc0000 #800000 #800000 #cc0000;
 }
 
-.yui3-skin-mine .yui3-button-primary:hover,
-.yui3-skin-mine .yui3-button-selected:hover {
+.yui3-skin-rclock .yui3-button-primary:hover,
+.yui3-skin-rclock .yui3-button-selected:hover {
     background-color: #800000;
     color: #ffffff;
     -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.25) inset, 0 2px 2px rgba(255, 255, 255, 0.17) inset, 0 1px 2px rgba(0, 0, 0, 0.15);
@@ -232,15 +232,15 @@
 }
 
 
-.yui3-skin-mine .yui3-sam .yui3-button:-moz-focusring {
+.yui3-skin-rclock .yui3-sam .yui3-button:-moz-focusring {
     outline-color: rgba(0, 0, 0, 0.85);
 }
 
 
-.yui3-skin-mine .yui3-night .yui3-button:-moz-focusring {
+.yui3-skin-rclock .yui3-night .yui3-button:-moz-focusring {
     outline-color: rgba(255, 255, 255, 0.85);
 }
-.yui3-skin-mine .yui3-calendar-content {
+.yui3-skin-rclock .yui3-calendar-content {
     padding: 0.98em 1em 1.47em;
     border-radius: 8px;
     background:    -moz-linear-gradient(top, rgba(252, 252, 252, 0.3) 0%, rgba(237, 237, 237, 0) 49%, rgba(237, 237, 237, 0) 51%, rgba(186, 186, 186, 0.3) 100%);
@@ -256,26 +256,26 @@
     border-color: #fcfcfc #dedede #dedede #fcfcfc;
 }
 
-.yui3-skin-mine .yui3-calendar-grid {
+.yui3-skin-rclock .yui3-calendar-grid {
     padding: 5px;  /* jeff sees no affect */
     border-collapse: collapse;
 }
 
-.yui3-skin-mine .yui3-calendar-header {
+.yui3-skin-rclock .yui3-calendar-header {
     padding-bottom:10px;
     color: #171717;
 }
 
-.yui3-skin-mine .yui3-calendar-header-label {
+.yui3-skin-rclock .yui3-calendar-header-label {
     margin: 0;
     font-size: 1em;
     font-weight: bold;
 }
 
 
-.yui3-skin-mine .yui3-calendar-day,
-.yui3-skin-mine .yui3-calendar-prevmonth-day,
-.yui3-skin-mine .yui3-calendar-nextmonth-day {
+.yui3-skin-rclock .yui3-calendar-day,
+.yui3-skin-rclock .yui3-calendar-prevmonth-day,
+.yui3-skin-rclock .yui3-calendar-nextmonth-day {
     padding: 0.16em 0.16em 0.24em;  /*was padding: 5px */
     text-align: center;
 }
@@ -283,32 +283,32 @@
 
 
 
-.yui3-skin-mine .yui3-calendar-weekday {
+.yui3-skin-rclock .yui3-calendar-weekday {
     font-weight: bold;
     background: {{weekdayHeadBackground}};
     color: #404040;
 }
 
-.yui3-skin-mine .yui3-calendar-prevmonth-day,
-.yui3-skin-mine .yui3-calendar-nextmonth-day {
+.yui3-skin-rclock .yui3-calendar-prevmonth-day,
+.yui3-skin-rclock .yui3-calendar-nextmonth-day {
     background: #ededed;
     color: #9e9e9e;
     border: solid 1px #c7c7c7;
 }
 
-.yui3-skin-mine .yui3-calendar-day {
+.yui3-skin-rclock .yui3-calendar-day {
     font-weight: bold;
     background: #d6d6d6;
     color: #262626;
     border: solid 1px #c7c7c7;
 }
-.yui3-skin-mine .yui3-calendar-day:hover,         /* When cursor   is used to navigate days */
-.yui3-skin-mine .yui3-calendar-day-highlighted {  /* When keyboard is used to navigate days */
+.yui3-skin-rclock .yui3-calendar-day:hover,         /* When cursor   is used to navigate days */
+.yui3-skin-rclock .yui3-calendar-day-highlighted {  /* When keyboard is used to navigate days */
     background: #c0bfbf;
     color: #0f0f0f;
 }
 
-.yui3-skin-mine .yui3-calendar-day-selected {
+.yui3-skin-rclock .yui3-calendar-day-selected {
     background:    -moz-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(158, 0, 0, 0) 49%, rgba(158, 0, 0, 0) 51%, rgba(46, 0, 0, 0.3) 100%);
     background:  -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0.3)), color-stop(49%, rgba(158, 0, 0, 0)), color-stop(51%, rgba(158, 0, 0, 0)), color-stop(100%,rgba(46, 0, 0, 0.3)));
     background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(158, 0, 0, 0) 49%, rgba(158, 0, 0, 0) 51%, rgba(46, 0, 0, 0.3) 100%);
@@ -320,31 +320,31 @@
     color: #ffebeb;
 }
 
-.yui3-skin-mine .yui3-calendar-day-selected:hover, /* When cursor hovers over selected days */
-.yui3-skin-mine .yui3-calendar-day-selected.yui3-calendar-day-highlighted { /* When keyboard focuses over selected days */
+.yui3-skin-rclock .yui3-calendar-day-selected:hover, /* When cursor hovers over selected days */
+.yui3-skin-rclock .yui3-calendar-day-selected.yui3-calendar-day-highlighted { /* When keyboard focuses over selected days */
     background-color: #800000;
     color: #ffffff;
 }
 
-.yui3-skin-mine .yui3-calendar-header-label {
+.yui3-skin-rclock .yui3-calendar-header-label {
     text-align: center;
 }
 
-.yui3-skin-mine .yui3-calendar-left-grid {
+.yui3-skin-rclock .yui3-calendar-left-grid {
    margin-right:1em;
 }
 
-.yui3-skin-mine .yui3-calendar-right-grid {
+.yui3-skin-rclock .yui3-calendar-right-grid {
    margin-left:1em;
 }
 
-.yui3-skin-mine .yui3-calendar-selection-disabled,
-.yui3-skin-mine .yui3-calendar-selection-disabled:hover {
+.yui3-skin-rclock .yui3-calendar-selection-disabled,
+.yui3-skin-rclock .yui3-calendar-selection-disabled:hover {
   color: #9e9e9e;
   background: #ededed;
 }
 /**************** the following from calendarnavigator.css (allways seems to be included in widget)******************/
-.yui3-skin-mine .yui3-calendarnav-prevmonth, .yui3-skin-mine .yui3-calendarnav-nextmonth {
+.yui3-skin-rclock .yui3-calendarnav-prevmonth, .yui3-skin-rclock .yui3-calendarnav-nextmonth {
   color: #000000;  /*falls back to text if image not rendered */
   width: 12px;
   height: 14px;
@@ -352,35 +352,35 @@
   background-repeat: no-repeat;
 }
 
-.yui3-skin-mine .yui3-calendarnav-prevmonth:hover, .yui3-skin-mine .yui3-calendarnav-nextmonth:hover {
+.yui3-skin-rclock .yui3-calendarnav-prevmonth:hover, .yui3-skin-rclock .yui3-calendarnav-nextmonth:hover {
   background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAOCAYAAAA1+Nx+AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAPpJREFUeNpi/P//PwMxQD9jszSQ6oJyyy7O8H1KjD5GQhYADeYEUkVAXAHEPFDhL0DcAcR9QIu+k20B0PBAIDUBiOVwKHkExAVAS9aTZAHQYAOowfYMxIGDUIsu4LUAaLAQkGoB4kwG8sB0IK4BWvQOxQKgwcxAdj4Q1wExPwNl4CMQNwHxRKBFfxn10jd5ADm9QKzFQF1wDYiLmaAcNgbqA7CZTEBv7ADS2iDboN5joEIQgczSBpmNHsmiQKodiJPJNHwuEFcCDX49MMkUi0VRUB/hy2ggFy+jtKgohRYVnFDh79CiopuiogLNIjmobxigrn5EjD6AAAMAok9vhfHG8wQAAAAASUVORK5CYII=);
   color: #0066CC;
 }
 
-.yui3-skin-mine .yui3-calendarnav-month-disabled, .yui3-skin-mine .yui3-calendarnav-month-disabled:hover {
+.yui3-skin-rclock .yui3-calendarnav-month-disabled, .yui3-skin-rclock .yui3-calendarnav-month-disabled:hover {
   background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAOCAYAAAA1+Nx+AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAQhJREFUeNqs0yGLAlEUhuHrKoIgCFbBJghb3F+g0WrVarEqLIhBEEFYWKNNMBktU4z6C5RNkwyCyWQSTPuOfCOCrHNnxwMPyOGe73DAiTmOYywrhy/9/sTBZujN4k0KPbioi6teKuqCmsKGSN/10+q5ehN6QQkrLJB/Mp/Xm5VmAhdkMcEGZWNfZc1MlPGwII42dmiZ/1dLGW1lXhdU8YNvZEz0yijLy6z6FyTN6yvpX7DEOzo4vSD4pCwvc+lfcMEYBUwjhE+VMVbmw7/oiCY+sA4RvNZMUxmB38EWFTSwfxK815uKZkJ/yXMU0cf5rn9Wr6g3f1bC4nwvbIAZRup1Ay671a8AAwC3OzOqxK+rkwAAAABJRU5ErkJggg==);
   cursor: default;
   color: #CCCCCC;
 }
 
-.yui3-skin-mine .yui3-calendarnav-prevmonth, .yui3-skin-mine .yui3-calendarnav-prevmonth:hover {
+.yui3-skin-rclock .yui3-calendarnav-prevmonth, .yui3-skin-rclock .yui3-calendarnav-prevmonth:hover {
   background-position: 0px 0px;
   margin-left:-12px;
 }
 
-.yui3-skin-mine .yui3-calendarnav-nextmonth, .yui3-skin-mine .yui3-calendarnav-nextmonth:hover {
+.yui3-skin-rclock .yui3-calendarnav-nextmonth, .yui3-skin-rclock .yui3-calendarnav-nextmonth:hover {
   background-position: -12px 0px;
   margin-right: -12px;
 }
 
-.yui3-skin-mine .yui3-calendarnav-prevmonth span, .yui3-skin-mine .yui3-calendarnav-nextmonth span {
+.yui3-skin-rclock .yui3-calendarnav-prevmonth span, .yui3-skin-rclock .yui3-calendarnav-nextmonth span {
    display: none;
    *display: block;
 }
 
 /* basic skin styles */
 /* basic skin styles */
-.yui3-skin-mine .yui3-datatable-table {
+.yui3-skin-rclock .yui3-datatable-table {
     margin: 0;
     padding: 0;
     font-family: arial, sans-serif;
@@ -394,19 +394,19 @@
     border: solid 1px #dedede;
 }
 
-.yui3-skin-mine .yui3-datatable-caption {
+.yui3-skin-rclock .yui3-datatable-caption {
     color: #adadad;
     font: italic 85%/1 arial, sans-serif;
     padding: 0.98em 0em; /*1em 0;*/
     text-align: center;
 }
 
-.yui3-skin-mine .yui3-datatable-cell {
+.yui3-skin-rclock .yui3-datatable-cell {
     background-color: #ededed;
     color: #404040;
 }
-.yui3-skin-mine .yui3-datatable-cell,
-.yui3-skin-mine .yui3-datatable-header {
+.yui3-skin-rclock .yui3-datatable-cell,
+.yui3-skin-rclock .yui3-datatable-header {
     border-left: 1px solid #dedede; /*  inner column border */
     border-width: 0 0 0 1px;
     font-size: inherit;
@@ -414,12 +414,12 @@
   overflow: visible; /*to make ths where the title is really long work*/
     padding: 0.29em 0.6em; /*4px 10px 4px 10px;*/ /* cell padding */
 }
-.yui3-skin-mine .yui3-datatable-cell:first-child,
-.yui3-skin-mine .yui3-datatable-first-header {
+.yui3-skin-rclock .yui3-datatable-cell:first-child,
+.yui3-skin-rclock .yui3-datatable-first-header {
     border-left-width: 0px;
 }
 
-.yui3-skin-mine .yui3-datatable-header {
+.yui3-skin-rclock .yui3-datatable-header {
     background:    -moz-linear-gradient(top, rgba(252, 252, 252, 0.3) 0%, rgba(215, 214, 214, 0) 49%, rgba(215, 214, 214, 0) 51%, rgba(167, 165, 165, 0.3) 100%);
     background:  -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(252, 252, 252, 0.3)), color-stop(49%, rgba(215, 214, 214, 0)), color-stop(51%, rgba(215, 214, 214, 0)), color-stop(100%,rgba(167, 165, 165, 0.3)));
     background: -webkit-linear-gradient(top, rgba(252, 252, 252, 0.3) 0%, rgba(215, 214, 214, 0) 49%, rgba(215, 214, 214, 0) 51%, rgba(167, 165, 165, 0.3) 100%);
@@ -442,26 +442,26 @@ striping:
    even - #fff (white)
    odd  - #edf5ff (light blue)
 */
-.yui3-skin-mine .yui3-datatable-even .yui3-datatable-cell {
+.yui3-skin-rclock .yui3-datatable-even .yui3-datatable-cell {
 }
-.yui3-skin-mine .yui3-datatable-odd  .yui3-datatable-cell  {
+.yui3-skin-rclock .yui3-datatable-odd  .yui3-datatable-cell  {
     /*background-color: #edf5ff;*/
     background-color: #dedede;
     color: #262626;
 }
 /************************  sortable ***************/
-.yui3-skin-mine .yui3-datatable-sortable-column {
+.yui3-skin-rclock .yui3-datatable-sortable-column {
     cursor: pointer;
 }
 
 /* Jeff: this seems to be just the header of a sorted column */
-.yui3-skin-mine .yui3-datatable-columns .yui3-datatable-sorted,
-.yui3-skin-mine .yui3-datatable-sortable-column:hover {
+.yui3-skin-rclock .yui3-datatable-columns .yui3-datatable-sorted,
+.yui3-skin-rclock .yui3-datatable-sortable-column:hover {
     background-color: #b6b4b4;
     color: #080808;
 }
 
-.yui3-skin-mine .yui3-datatable-sort-liner {
+.yui3-skin-rclock .yui3-datatable-sort-liner {
     display: block;
     height: 100%;
     position: relative;
@@ -469,7 +469,7 @@ striping:
     position: relative;
 }
 
-.yui3-skin-mine .yui3-datatable-sort-indicator {
+.yui3-skin-rclock .yui3-datatable-sort-indicator {
     position: absolute;
     right: 0;
     bottom: .5ex;
@@ -480,24 +480,24 @@ striping:
     overflow: hidden;
 }
 
-.yui3-skin-mine .yui3-datatable-sorted .yui3-datatable-sort-indicator {
+.yui3-skin-rclock .yui3-datatable-sorted .yui3-datatable-sort-indicator {
     background-position: 0 -10px;
 }
-.yui3-skin-mine .yui3-datatable-sorted-desc .yui3-datatable-sort-indicator {
+.yui3-skin-rclock .yui3-datatable-sorted-desc .yui3-datatable-sort-indicator {
     background-position: 0 -20px;
 }
 
-.yui3-skin-mine .yui3-datatable-data .yui3-datatable-even .yui3-datatable-sorted {
+.yui3-skin-rclock .yui3-datatable-data .yui3-datatable-even .yui3-datatable-sorted {
     background-color: #dedede;
     color: #171717;
 }
 
-.yui3-skin-mine .yui3-datatable-data .yui3-datatable-odd .yui3-datatable-sorted {
+.yui3-skin-rclock .yui3-datatable-data .yui3-datatable-odd .yui3-datatable-sorted {
     background-color: #cfcfcf;
 }
 
 /* Jeff thinks this should be added */
-.yui3-skin-mine .yui3-datatable-columns .yui3-datatable-sorted {
+.yui3-skin-rclock .yui3-datatable-columns .yui3-datatable-sorted {
     background-color: #b6b4b4;
 }
 
@@ -548,7 +548,7 @@ v\:fill {
 }
 
 /** dial-skin.css  (sam) *******************************/
-.yui3-skin-mine .yui3-dial-handle{ /*container. top left corner used for trig positioning*/
+.yui3-skin-rclock .yui3-dial-handle{ /*container. top left corner used for trig positioning*/
     background-color: #9e0000;
 	opacity:0.3;
 	-moz-box-shadow:1px 1px 1px rgba(0, 0, 0, 0.9) inset;
@@ -556,14 +556,14 @@ v\:fill {
 	cursor:pointer;
 	font-size:1px;
 }
-.yui3-skin-mine .yui3-dial-ring {
+.yui3-skin-rclock .yui3-dial-ring {
     background: -moz-linear-gradient(-45deg, rgba(255,255,255, 0.1) 0%, rgba(255,255,255,0) 39%, rgba(0,0,0,0) 40%, rgba(0,0,0, 0.2) 100%);
     background-color: #ededed;
 	box-shadow:1px 1px 5px rgba(0, 0, 0, 0.4) inset;
 	-webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4) inset; /*Chrome 7/Win bug*/
 	-moz-box-shadow:1px 1px 5px rgba(0, 0, 0, 0.4) inset;
 }
-.yui3-skin-mine .yui3-dial-center-button{
+.yui3-skin-rclock .yui3-dial-center-button{
     background: -moz-radial-gradient(30% 30% 0deg, circle farthest-side, rgba(255,255,255, 0.3) 24%, rgba(255,255,255, 0) 41%, rgba(0,0,0, 0) 42%, rgba(0,0,0, 0.2) 83%) repeat scroll 0 0 transparent;
     background-color: #d7d6d6;
 	box-shadow:-1px -1px 2px rgba(0, 0, 0, 0.3) inset, 1px 1px 2px rgba(0, 0, 0, 0.5);
@@ -571,21 +571,21 @@ v\:fill {
 	opacity:0.7;
 	/*text-align:center;*/
 }
-.yui3-skin-mine .yui3-dial-reset-string{
+.yui3-skin-rclock .yui3-dial-reset-string{
     color: #272626;
 	font-size:85%;
 	text-decoration:underline;
 }
-.yui3-skin-mine .yui3-dial-label{
+.yui3-skin-rclock .yui3-dial-label{
 	color:    #4f4f4f; /* this sits directly on page background */
 	margin-bottom:0.8em;
 }
-.yui3-skin-mine .yui3-dial-value-string{
+.yui3-skin-rclock .yui3-dial-value-string{
 	margin-left:0.5em;
 	color: #262626;   /*this sits directly on page background */
 	font-size:130%;
 }
-.yui3-skin-mine .yui3-dial-value {
+.yui3-skin-rclock .yui3-dial-value {
 	visibility:visible;
 	position:absolute;
 	top:0;
@@ -593,7 +593,7 @@ v\:fill {
 	width:4em;
 }
 
-.yui3-skin-mine .yui3-dial-north-mark{
+.yui3-skin-rclock .yui3-dial-north-mark{
 	position:absolute;
 	border-left:2px solid #adadad;
 	height:5px;
@@ -602,21 +602,21 @@ v\:fill {
 	top:-7px;
 	font-size:1px;
 }
-.yui3-skin-mine .yui3-dial-marker {
+.yui3-skin-rclock .yui3-dial-marker {
 	background-color: #171717;
 	opacity:0.2;
 	font-size:1px;
 }
-.yui3-skin-mine .yui3-dial-marker-max-min{
+.yui3-skin-rclock .yui3-dial-marker-max-min{
 	background-color:#AB3232;  /*red for max/min*/
 	opacity:0.6;
 }
-.yui3-skin-mine .yui3-dial-ring-vml,
-.yui3-skin-mine .yui3-dial-center-button-vml,
-.yui3-skin-mine .yui3-dial-marker v\:oval.yui3-dial-marker-max-min,
-.yui3-skin-mine v\:oval.yui3-dial-marker-max-min,
-.yui3-skin-mine .yui3-dial-marker-vml,
-.yui3-skin-mine .yui3-dial-handle-vml {
+.yui3-skin-rclock .yui3-dial-ring-vml,
+.yui3-skin-rclock .yui3-dial-center-button-vml,
+.yui3-skin-rclock .yui3-dial-marker v\:oval.yui3-dial-marker-max-min,
+.yui3-skin-rclock v\:oval.yui3-dial-marker-max-min,
+.yui3-skin-rclock .yui3-dial-marker-vml,
+.yui3-skin-rclock .yui3-dial-handle-vml {
     background: none;
     opacity:0;
 }
@@ -798,8 +798,8 @@ v\:fill {
 /* from node-menunav-skin.css   (sam) ***************************************/
 /* Vertical menus and submenus */
 
-.yui3-skin-mine .yui3-menu-content,
-.yui3-skin-mine .yui3-menu .yui3-menu .yui3-menu-content {
+.yui3-skin-rclock .yui3-menu-content,
+.yui3-skin-rclock .yui3-menu .yui3-menu .yui3-menu-content {
 
     font-size: 100%;
     line-height: 1.5;  /* 18px 1.5*/
@@ -810,7 +810,7 @@ v\:fill {
 
 }
 
-.yui3-skin-mine .yui3-menu .yui3-menu .yui3-menu-content {
+.yui3-skin-rclock .yui3-menu .yui3-menu .yui3-menu-content {
 
 	font-size: 100%;
 
@@ -818,7 +818,7 @@ v\:fill {
 
 
 /* Horizontal menus */
-.yui3-skin-mine .yui3-menu-horizontal .yui3-menu-content {
+.yui3-skin-rclock .yui3-menu-horizontal .yui3-menu-content {
 
     line-height: 2;  /* ~24px */
     *line-height: 1.9; /* For IE */
@@ -834,14 +834,14 @@ v\:fill {
 
 }
 /* 2nd and subsequent .yui3-menu-content should not have gradient */
-.yui3-skin-mine .yui3-menu-horizontal .yui3-menu-content .yui3-menu-content {
+.yui3-skin-rclock .yui3-menu-horizontal .yui3-menu-content .yui3-menu-content {
 	background: none;
     background-color: #ededed;
     box-shadow: 2px 2px 7px rgba(0,0,0, 0.15);
 }
 
-.yui3-skin-mine .yui3-menu ul,
-.yui3-skin-mine .yui3-menu ul ul {
+.yui3-skin-rclock .yui3-menu ul,
+.yui3-skin-rclock .yui3-menu ul ul {
 
 	margin-top: 3px;
 	padding-top: 3px;
@@ -849,7 +849,7 @@ v\:fill {
 
 }
 
-.yui3-skin-mine .yui3-menu ul.first-of-type {
+.yui3-skin-rclock .yui3-menu ul.first-of-type {
 
     border: 0;
 	margin: 0;
@@ -857,7 +857,7 @@ v\:fill {
 
 }
 
-.yui3-skin-mine .yui3-menu-horizontal ul {
+.yui3-skin-rclock .yui3-menu-horizontal ul {
 
 	padding: 0;
 	margin: 0;
@@ -866,8 +866,8 @@ v\:fill {
 }
 
 
-.yui3-skin-mine .yui3-menu li,
-.yui3-skin-mine .yui3-menu .yui3-menu li {
+.yui3-skin-rclock .yui3-menu li,
+.yui3-skin-rclock .yui3-menu .yui3-menu li {
 
     /*
         For and IE 6 (Strict Mode and Quirks Mode) and IE 7 (Quirks Mode only):
@@ -880,26 +880,26 @@ v\:fill {
 
 }
 
-.yui3-skin-mine .yui3-menu-horizontal li {
+.yui3-skin-rclock .yui3-menu-horizontal li {
 
 	_border-bottom: 0;
 
 }
 
-.yui3-skin-mine .yui3-menubuttonnav li {
+.yui3-skin-rclock .yui3-menubuttonnav li {
 
     border-right: solid 1px #f00;     /* fix me */
 
 }
 
-.yui3-skin-mine .yui3-splitbuttonnav li {
+.yui3-skin-rclock .yui3-splitbuttonnav li {
 
     border-right: solid 1px #d6d6d6;
 
 }
 
-.yui3-skin-mine .yui3-menubuttonnav li li,
-.yui3-skin-mine .yui3-splitbuttonnav li li {
+.yui3-skin-rclock .yui3-menubuttonnav li li,
+.yui3-skin-rclock .yui3-splitbuttonnav li li {
 
 	border-right: 0;
 
@@ -909,10 +909,10 @@ v\:fill {
 /* Menuitems and menu labels */
 
 
-.yui3-skin-mine .yui3-menu-label,
-.yui3-skin-mine .yui3-menu .yui3-menu .yui3-menu-label,
-.yui3-skin-mine .yui3-menuitem-content,
-.yui3-skin-mine .yui3-menu .yui3-menu .yui3-menuitem-content {
+.yui3-skin-rclock .yui3-menu-label,
+.yui3-skin-rclock .yui3-menu .yui3-menu .yui3-menu-label,
+.yui3-skin-rclock .yui3-menuitem-content,
+.yui3-skin-rclock .yui3-menu .yui3-menu .yui3-menuitem-content {
 
     padding: 0.1em 0.5em; /*0 1em; */
     color: #404040;
@@ -930,8 +930,8 @@ v\:fill {
 
 }
 
-.yui3-skin-mine .yui3-menu-horizontal .yui3-menu-label,
-.yui3-skin-mine .yui3-menu-horizontal .yui3-menuitem-content {
+.yui3-skin-rclock .yui3-menu-horizontal .yui3-menu-label,
+.yui3-skin-rclock .yui3-menu-horizontal .yui3-menuitem-content {
 
     padding: 0.1em 0.5em; /*0 10px;*/
     border-style: solid;
@@ -945,26 +945,26 @@ v\:fill {
     width: auto;
 
 }
-.yui3-skin-mine .yui3-menu-label,
-.yui3-skin-mine .yui3-menu .yui3-menu .yui3-menu-label {
+.yui3-skin-rclock .yui3-menu-label,
+.yui3-skin-rclock .yui3-menu .yui3-menu .yui3-menu-label {
     /* Jeff fix me. need icons */
 	background: url(assets/images/vertical-menu-submenu-indicator.png) right center no-repeat;
 }
 
-.yui3-skin-mine .yui3-menu-horizontal .yui3-menu-label {
+.yui3-skin-rclock .yui3-menu-horizontal .yui3-menu-label {
     background: none;
 }
 
-.yui3-skin-mine .yui3-menubuttonnav .yui3-menu-label,
-.yui3-skin-mine .yui3-splitbuttonnav .yui3-menu-label {
+.yui3-skin-rclock .yui3-menubuttonnav .yui3-menu-label,
+.yui3-skin-rclock .yui3-splitbuttonnav .yui3-menu-label {
 	background-image: none;
 }
 
-.yui3-skin-mine .yui3-menubuttonnav .yui3-menu-label {
+.yui3-skin-rclock .yui3-menubuttonnav .yui3-menu-label {
     padding-right: 0;
 }
 
-.yui3-skin-mine .yui3-menubuttonnav .yui3-menu-label em {
+.yui3-skin-rclock .yui3-menubuttonnav .yui3-menu-label em {
 	font-style: normal;
 	padding-right: 20px;
     display: block;
@@ -973,11 +973,11 @@ v\:fill {
 }
 
 
-.yui3-skin-mine .yui3-splitbuttonnav .yui3-menu-label {
+.yui3-skin-rclock .yui3-splitbuttonnav .yui3-menu-label {
 	padding: 0;
 }
 
-.yui3-skin-mine .yui3-splitbuttonnav .yui3-menu-label a {
+.yui3-skin-rclock .yui3-splitbuttonnav .yui3-menu-label a {
 	float: left;
 	width: auto;
     color: #404040;
@@ -986,7 +986,7 @@ v\:fill {
 	padding: 0.1em 0.3em 0.1em 0.5em; /*0 5px 0 10px;*/
 }
 
-.yui3-skin-mine .yui3-splitbuttonnav .yui3-menu-label .yui3-menu-toggle {
+.yui3-skin-rclock .yui3-splitbuttonnav .yui3-menu-label .yui3-menu-toggle {
 
 	padding: 0.1em 0em 0.1em; /*jeff added top and bottom padding to match menu-label a*/ /*0;*/	/* Overide padding applied by the preceeding rule. */
 	border-left: solid 1px #d6d6d6;
@@ -1000,10 +1000,10 @@ v\:fill {
 
 /* Selected menuitem */
 
-.yui3-skin-mine .yui3-menu-label-active,
-.yui3-skin-mine .yui3-menu-label-menuvisible,
-.yui3-skin-mine .yui3-menu .yui3-menu .yui3-menu-label-active,
-.yui3-skin-mine .yui3-menu .yui3-menu .yui3-menu-label-menuvisible {
+.yui3-skin-rclock .yui3-menu-label-active,
+.yui3-skin-rclock .yui3-menu-label-menuvisible,
+.yui3-skin-rclock .yui3-menu .yui3-menu .yui3-menu-label-active,
+.yui3-skin-rclock .yui3-menu .yui3-menu .yui3-menu-label-menuvisible {
 
 /* this is a menu item that has a child menu */
 
@@ -1011,8 +1011,8 @@ v\:fill {
     color: #030303;
 }
 
-.yui3-skin-mine .yui3-menuitem-active .yui3-menuitem-content,
-.yui3-skin-mine .yui3-menu .yui3-menu .yui3-menuitem-active .yui3-menuitem-content {
+.yui3-skin-rclock .yui3-menuitem-active .yui3-menuitem-content,
+.yui3-skin-rclock .yui3-menu .yui3-menu .yui3-menuitem-active .yui3-menuitem-content {
 	background-image: none;
     background: none;  /* supress menuitems from having gradients */
     background-color: #d6d6d6;
@@ -1026,9 +1026,9 @@ v\:fill {
 
 }
 
-.yui3-skin-mine .yui3-menu-horizontal .yui3-menu-label-active,
-.yui3-skin-mine .yui3-menu-horizontal .yui3-menuitem-active .yui3-menuitem-content,
-.yui3-skin-mine .yui3-menu-horizontal .yui3-menu-label-menuvisible {
+.yui3-skin-rclock .yui3-menu-horizontal .yui3-menu-label-active,
+.yui3-skin-rclock .yui3-menu-horizontal .yui3-menuitem-active .yui3-menuitem-content,
+.yui3-skin-rclock .yui3-menu-horizontal .yui3-menu-label-menuvisible {
 
     border-color: #dedede;                 /* added this varialble after YUI conf for sam skin */
 	background: background:    -moz-linear-gradient(top, rgba(252, 252, 252, 0.3) 0%, rgba(199, 199, 199, 0) 49%, rgba(199, 199, 199, 0) 51%, rgba(150, 150, 150, 0.3) 100%);
@@ -1043,14 +1043,14 @@ v\:fill {
 }
 
 /* this keeps the background of a submenu from getting the active color when it is first made visible, before you cursor over it.*/
-.yui3-skin-mine .yui3-menu-horizontal .yui3-menuitem-active .yui3-menu .yui3-menuitem-content{
+.yui3-skin-rclock .yui3-menu-horizontal .yui3-menuitem-active .yui3-menu .yui3-menuitem-content{
     background: none;
     background-color: transparent;
     color: #404040;
 }
 
 /* protects the items in a menu from having a gradient when hovered over */
-.yui3-skin-mine .yui3-menu-horizontal .yui3-menuitem-active .yui3-menuitem-content {
+.yui3-skin-rclock .yui3-menu-horizontal .yui3-menuitem-active .yui3-menuitem-content {
 	background: background:    -moz-linear-gradient(top, rgba(252, 252, 252, 0.3) 0%, rgba(199, 199, 199, 0) 49%, rgba(199, 199, 199, 0) 51%, rgba(150, 150, 150, 0.3) 100%);
     background:  -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(252, 252, 252, 0.3)), color-stop(49%, rgba(199, 199, 199, 0)), color-stop(51%, rgba(199, 199, 199, 0)), color-stop(100%,rgba(150, 150, 150, 0.3)));
     background: -webkit-linear-gradient(top, rgba(252, 252, 252, 0.3) 0%, rgba(199, 199, 199, 0) 49%, rgba(199, 199, 199, 0) 51%, rgba(150, 150, 150, 0.3) 100%);
@@ -1061,12 +1061,12 @@ v\:fill {
     background-color: #c7c7c7;
 }
 
-.yui3-skin-mine .yui3-menubuttonnav .yui3-menu-label-active,
-.yui3-skin-mine .yui3-menubuttonnav .yui3-menuitem-active .yui3-menuitem-content,
-.yui3-skin-mine .yui3-menubuttonnav .yui3-menu-label-menuvisible,
-.yui3-skin-mine .yui3-splitbuttonnav .yui3-menu-label-active a,
-.yui3-skin-mine .yui3-splitbuttonnav .yui3-menuitem-active .yui3-menuitem-content,
-.yui3-skin-mine .yui3-splitbuttonnav .yui3-menu-label-menuvisible a {
+.yui3-skin-rclock .yui3-menubuttonnav .yui3-menu-label-active,
+.yui3-skin-rclock .yui3-menubuttonnav .yui3-menuitem-active .yui3-menuitem-content,
+.yui3-skin-rclock .yui3-menubuttonnav .yui3-menu-label-menuvisible,
+.yui3-skin-rclock .yui3-splitbuttonnav .yui3-menu-label-active a,
+.yui3-skin-rclock .yui3-splitbuttonnav .yui3-menuitem-active .yui3-menuitem-content,
+.yui3-skin-rclock .yui3-splitbuttonnav .yui3-menu-label-menuvisible a {
 
     border-left-width: 1px;
     /*margin-left: -1px; */
@@ -1074,13 +1074,13 @@ v\:fill {
 
 }
 
-.yui3-skin-mine .yui3-splitbuttonnav .yui3-menu-label-menuvisible {
+.yui3-skin-rclock .yui3-splitbuttonnav .yui3-menu-label-menuvisible {
 
     background: transparent;
 
 }
 
-.yui3-skin-mine .yui3-splitbuttonnav .yui3-menu-label-menuvisible .yui3-menu-toggle {
+.yui3-skin-rclock .yui3-splitbuttonnav .yui3-menu-label-menuvisible .yui3-menu-toggle {
 
     background-color: #d6d6d6;
 
@@ -1101,16 +1101,16 @@ v\:fill {
 }
 
 /** jeff added, group discussion needed ***************************************/
-.yui3-skin-mine .yui3-overlay-content .yui3-widget-hd,
-.yui3-skin-mine .yui3-overlay-content .yui3-widget-bd,
-.yui3-skin-mine .yui3-overlay-content .yui3-widget-ft {
+.yui3-skin-rclock .yui3-overlay-content .yui3-widget-hd,
+.yui3-skin-rclock .yui3-overlay-content .yui3-widget-bd,
+.yui3-skin-rclock .yui3-overlay-content .yui3-widget-ft {
     background-color: #ededed;
     border: solid 1px #dedede;
     border-bottom: none;
     padding: 0.29em 0.5em; /*0.3em 0.5em;*/
     color: #404040;
 }
-.yui3-skin-mine .yui3-overlay-content .yui3-widget-ft {
+.yui3-skin-rclock .yui3-overlay-content .yui3-widget-ft {
     border-bottom: solid 1px #dedede;
 }
 
@@ -1139,7 +1139,7 @@ v\:fill {
 }
 
 /** from panel-skin.css (sam)***************************************/
-.yui3-skin-mine .yui3-panel-content {
+.yui3-skin-rclock .yui3-panel-content {
     -webkit-box-shadow: 2 2 7px rgba(0,0,0,0.15);
     -moz-box-shadow: 2 2 7px rgba(0,0,0,0.15);
     box-shadow: 2px 2px 7px rgba(0,0,0,0.15);
@@ -1148,7 +1148,7 @@ v\:fill {
     color: #404040;
     border-radius: 4px;
 }
-.yui3-skin-mine .yui3-panel .yui3-widget-hd {
+.yui3-skin-rclock .yui3-panel .yui3-widget-hd {
     padding: 0.49em; /*8px 28px 8px 8px;*/  /* Room for close button. */
     padding-right: 40px; /* Room for Close button */
     min-height: 13px;           /* For the close button */
@@ -1169,19 +1169,19 @@ v\:fill {
     TODO: Add support for IE and W3C gradients
     */
 }
-.yui3-skin-mine .yui3-panel .yui3-widget-hd .yui3-widget-buttons {
+.yui3-skin-rclock .yui3-panel .yui3-widget-hd .yui3-widget-buttons {
     padding: 0.2em; /*8px;*/
 }
-.yui3-skin-mine .yui3-panel .yui3-widget-bd {
+.yui3-skin-rclock .yui3-panel .yui3-widget-bd {
     padding: 0.49em; /*10px;*/
 }
-.yui3-skin-mine .yui3-panel .yui3-widget-ft {
+.yui3-skin-rclock .yui3-panel .yui3-widget-ft {
 	background: #dedede;
 	padding: 0.49em;8px;
     text-align: right;
     border-radius: 0 0 4px 4px;
 }
-.yui3-skin-mine .yui3-panel .yui3-widget-ft .yui3-button {
+.yui3-skin-rclock .yui3-panel .yui3-widget-ft .yui3-button {
     margin-left: 8px;
 }
 
@@ -1191,7 +1191,7 @@ Support for icon-based [x] "close" button in the header.
 Nicolas Gallagher: "CSS image replacement with pseudo-elements (NIR)"
 http://nicolasgallagher.com/css-image-replacement-with-pseudo-elements/
 */
-.yui3-skin-mine .yui3-panel .yui3-widget-hd .yui3-button-close {
+.yui3-skin-rclock .yui3-panel .yui3-widget-hd .yui3-button-close {
     /* Reset base button styles */
     background: transparent;
     filter: none;
@@ -1216,7 +1216,7 @@ http://nicolasgallagher.com/css-image-replacement-with-pseudo-elements/
     *color: #86A5EC;
     *background: url(sprite_icons.png) no-repeat 1px 1px;
 }
-.yui3-skin-mine .yui3-panel .yui3-widget-hd .yui3-button-close:before {
+.yui3-skin-rclock .yui3-panel .yui3-widget-hd .yui3-button-close:before {
     /*
     Displays the [x] icon in place of the "Close" text.
     Note: The `width` of this pseudo element is the same as its "host" element.
@@ -1229,24 +1229,24 @@ http://nicolasgallagher.com/css-image-replacement-with-pseudo-elements/
     width: 13px;
     margin: 1px 0 0 1px;
 }
-.yui3-skin-mine .yui3-panel-hidden .yui3-widget-hd .yui3-button-close {
+.yui3-skin-rclock .yui3-panel-hidden .yui3-widget-hd .yui3-button-close {
     /* Required for IE > 7 to deal with pseudo :before element */
     display: none;
 }
 
 /********  scrollview-base-skin.css **********************************************/
-.yui3-skin-mine .yui3-scrollview {
+.yui3-skin-rclock .yui3-scrollview {
     -webkit-tap-highlight-color: rgba(255,255,255,0);
 }
 /******** scrollview-scrollbars-skin.css   (sam) *************************************/
-.yui3-skin-mine .yui3-scrollview-scrollbar {
+.yui3-skin-rclock .yui3-scrollview-scrollbar {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate(0, 0);
 }
 
-.yui3-skin-mine .yui3-scrollview-scrollbar .yui3-scrollview-first,
-.yui3-skin-mine .yui3-scrollview-scrollbar .yui3-scrollview-middle,
-.yui3-skin-mine .yui3-scrollview-scrollbar .yui3-scrollview-last {
+.yui3-skin-rclock .yui3-scrollview-scrollbar .yui3-scrollview-first,
+.yui3-skin-rclock .yui3-scrollview-scrollbar .yui3-scrollview-middle,
+.yui3-skin-rclock .yui3-scrollview-scrollbar .yui3-scrollview-last {
     border-radius:3px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -1260,8 +1260,8 @@ http://nicolasgallagher.com/css-image-replacement-with-pseudo-elements/
     opacity: 0.5;
 }}
 
-.yui3-skin-mine .yui3-scrollview-scrollbar .yui3-scrollview-first,
-.yui3-skin-mine .yui3-scrollview-scrollbar .yui3-scrollview-last {
+.yui3-skin-rclock .yui3-scrollview-scrollbar .yui3-scrollview-first,
+.yui3-skin-rclock .yui3-scrollview-scrollbar .yui3-scrollview-last {
     border-bottom-right-radius:0;
     border-bottom-left-radius:0;
 
@@ -1272,7 +1272,7 @@ http://nicolasgallagher.com/css-image-replacement-with-pseudo-elements/
     -moz-border-radius-bottomleft:0;
 }
 
-.yui3-skin-mine .yui3-scrollview-scrollbar .yui3-scrollview-last {
+.yui3-skin-rclock .yui3-scrollview-scrollbar .yui3-scrollview-last {
     border-radius:0;
     border-bottom-right-radius:3px;
     border-bottom-left-radius:3px;
@@ -1288,7 +1288,7 @@ http://nicolasgallagher.com/css-image-replacement-with-pseudo-elements/
     -moz-transform: translate(0, 0);
 }
 
-.yui3-skin-mine .yui3-scrollview-scrollbar .yui3-scrollview-middle {
+.yui3-skin-rclock .yui3-scrollview-scrollbar .yui3-scrollview-middle {
     border-radius:0;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
@@ -1300,8 +1300,8 @@ http://nicolasgallagher.com/css-image-replacement-with-pseudo-elements/
     -moz-transform-origin: 0 0;
 }
 
-.yui3-skin-mine .yui3-scrollview-scrollbar-horiz .yui3-scrollview-first,
-.yui3-skin-mine .yui3-scrollview-scrollbar-horiz .yui3-scrollview-last {
+.yui3-skin-rclock .yui3-scrollview-scrollbar-horiz .yui3-scrollview-first,
+.yui3-skin-rclock .yui3-scrollview-scrollbar-horiz .yui3-scrollview-last {
     border-top-right-radius: 0;
     border-bottom-left-radius: 3px;
 
@@ -1312,7 +1312,7 @@ http://nicolasgallagher.com/css-image-replacement-with-pseudo-elements/
     -moz-border-radius-bottomleft: 3px;
 }
 
-.yui3-skin-mine .yui3-scrollview-scrollbar-horiz .yui3-scrollview-last {
+.yui3-skin-rclock .yui3-scrollview-scrollbar-horiz .yui3-scrollview-last {
     border-bottom-left-radius: 0;
     border-top-right-radius: 3px;
 
@@ -1323,7 +1323,7 @@ http://nicolasgallagher.com/css-image-replacement-with-pseudo-elements/
     -moz-border-radius-topright: 3px;
 }
 
-.yui3-skin-mine .yui3-scrollview-scrollbar-horiz .yui3-scrollview-middle {
+.yui3-skin-rclock .yui3-scrollview-scrollbar-horiz .yui3-scrollview-middle {
     -webkit-transform: translate3d(0,0,0) scaleX(1);
     -webkit-transform-origin: 0 0;
 
@@ -1331,8 +1331,8 @@ http://nicolasgallagher.com/css-image-replacement-with-pseudo-elements/
     -moz-transform-origin: 0 0;
 }
 
-.yui3-skin-mine .yui3-scrollview-scrollbar-vert-basic .yui3-scrollview-child,
-.yui3-skin-mine .yui3-scrollview-scrollbar-horiz-basic .yui3-scrollview-child {
+.yui3-skin-rclock .yui3-scrollview-scrollbar-vert-basic .yui3-scrollview-child,
+.yui3-skin-rclock .yui3-scrollview-scrollbar-horiz-basic .yui3-scrollview-child {
     background-color: #f00;  /* #aaa   can't find this */
     background-image: none;
 }
@@ -1433,28 +1433,28 @@ http://nicolasgallagher.com/css-image-replacement-with-pseudo-elements/
     bottom:auto;
 }
 /******** scrollview-list-skin.css  (sam) *****************************/
-.yui3-skin-mine .yui3-scrollview {
+.yui3-skin-rclock .yui3-scrollview {
     -webkit-tap-highlight-color: rgba(255,255,255,0);
 }
 
-.yui3-skin-mine .yui3-scrollview{
+.yui3-skin-rclock .yui3-scrollview{
 	background-color: #ededed;
 }
 /* For IE 6/7 - needs a background color (above) to pick up events, and zoom, to fill the UL */
-.yui3-skin-mine .yui3-scrollview-vert .yui3-scrollview-content .yui3-scrollview-item {
+.yui3-skin-rclock .yui3-scrollview-vert .yui3-scrollview-content .yui3-scrollview-item {
     *zoom:1;
 }
 
 /* For IE7 - needs zoom, otherwise clipped content is not rendered */
-.yui3-skin-mine .yui3-scrollview-vert .yui3-scrollview-content .yui3-scrollview-list {
+.yui3-skin-rclock .yui3-scrollview-vert .yui3-scrollview-content .yui3-scrollview-list {
     *zoom:1;
 	list-style:none; /*need these since reset is not required*/
 	padding:0; /*need these since reset is not required*/
 	margin:0; /*need these since reset is not required*/
 }
 
-.yui3-skin-mine .yui3-scrollview-content,
-.yui3-skin-mine .yui3-scrollview-vert .yui3-scrollview-content {
+.yui3-skin-rclock .yui3-scrollview-content,
+.yui3-skin-rclock .yui3-scrollview-vert .yui3-scrollview-content {
     border:1px solid #dedede; /* remove the ScrollView border here */
     /*border-top:0; Remove the top border if needed */
 	background-color: transparent;
@@ -1462,7 +1462,7 @@ http://nicolasgallagher.com/css-image-replacement-with-pseudo-elements/
 	color:black;
 }
                                         /*jeff can't find this ... -item class */
-.yui3-skin-mine .yui3-scrollview-vert .yui3-scrollview-content .yui3-scrollview-item {
+.yui3-skin-rclock .yui3-scrollview-vert .yui3-scrollview-content .yui3-scrollview-item {
     border-bottom: 1px solid #f00;
     padding: 15px 20px 16px;   /*jeff: not implemented since can't find -item class */
     font-size: 100%;
@@ -1473,17 +1473,17 @@ http://nicolasgallagher.com/css-image-replacement-with-pseudo-elements/
 
 
 /******** Jeff thinks these should be added, but it needs more group discussion ********/
-.yui3-skin-mine .yui3-scrollview-content ul {
+.yui3-skin-rclock .yui3-scrollview-content ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
-.yui3-skin-mine .yui3-scrollview-content li {
+.yui3-skin-rclock .yui3-scrollview-content li {
     padding: 0.29em 0.5em; /*0.3em 0.5em;*/
     border-bottom: solid 1px #d6d6d6;
     color: #404040;
 }
-.yui3-skin-mine .yui3-scrollview-content li:hover {
+.yui3-skin-rclock .yui3-scrollview-content li:hover {
     background: #d6d6d6;
     /*border-bottom: solid 1px #d6d6d6;*/
     color: #030303;
@@ -1529,16 +1529,16 @@ http://nicolasgallagher.com/css-image-replacement-with-pseudo-elements/
 
 /* Use thumbUrl /build/slider-base/assets/skins/sam/thumb-x.png */
 
-.yui3-skin-mine .yui3-slider-x .yui3-slider-rail,
-.yui3-skin-mine .yui3-slider-x .yui3-slider-rail-cap-left,
-.yui3-skin-mine .yui3-slider-x .yui3-slider-rail-cap-right {
+.yui3-skin-rclock .yui3-slider-x .yui3-slider-rail,
+.yui3-skin-rclock .yui3-slider-x .yui3-slider-rail-cap-left,
+.yui3-skin-rclock .yui3-slider-x .yui3-slider-rail-cap-right {
     background-image: none;
 }
 
-.yui3-skin-mine .yui3-slider-x .yui3-slider-rail {
+.yui3-skin-rclock .yui3-slider-x .yui3-slider-rail {
     height: 26px;
 }
-.yui3-skin-mine .yui3-slider-x .yui3-slider-thumb {
+.yui3-skin-rclock .yui3-slider-x .yui3-slider-thumb {
     background-color: #dedede;
     height: 18px;
     width: 12px;
@@ -1549,7 +1549,7 @@ http://nicolasgallagher.com/css-image-replacement-with-pseudo-elements/
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15), -1px -1px 3px rgba(0, 0, 0, 0.15) inset;
 }
 
-.yui3-skin-mine .yui3-slider-x .yui3-slider-rail-cap-left {
+.yui3-skin-rclock .yui3-slider-x .yui3-slider-rail-cap-left {
     background-color: #ededed;
     height: 2px;
     left: -4px;
@@ -1560,7 +1560,7 @@ http://nicolasgallagher.com/css-image-replacement-with-pseudo-elements/
     margin-top: 0.5em;
     border-radius: 2px 0 0 2px;
 }
-.yui3-skin-mine .yui3-slider-x .yui3-slider-rail-cap-right {
+.yui3-skin-rclock .yui3-slider-x .yui3-slider-rail-cap-right {
     background-color: #ededed;
     height: 2px;
     right: -4px;
@@ -1572,23 +1572,23 @@ http://nicolasgallagher.com/css-image-replacement-with-pseudo-elements/
     border-radius: 0 2px 2px 0;
 }
 
-.yui3-skin-mine .yui3-slider-x .yui3-slider-thumb-image,
-.yui3-skin-mine .yui3-slider-x .yui3-slider-thumb-shadow {
+.yui3-skin-rclock .yui3-slider-x .yui3-slider-thumb-image,
+.yui3-skin-rclock .yui3-slider-x .yui3-slider-thumb-shadow {
     display: none;
 }
 
 /* Vertical Slider */
 
-.yui3-skin-mine .yui3-slider-y .yui3-slider-rail,
-.yui3-skin-mine .yui3-slider-y .yui3-slider-rail-cap-top,
-.yui3-skin-mine .yui3-slider-y .yui3-slider-rail-cap-bottom {
+.yui3-skin-rclock .yui3-slider-y .yui3-slider-rail,
+.yui3-skin-rclock .yui3-slider-y .yui3-slider-rail-cap-top,
+.yui3-skin-rclock .yui3-slider-y .yui3-slider-rail-cap-bottom {
     background-image: none;
 }
 
-.yui3-skin-mine .yui3-slider-y .yui3-slider-rail {
+.yui3-skin-rclock .yui3-slider-y .yui3-slider-rail {
     width: 26px;
 }
-.yui3-skin-mine .yui3-slider-y .yui3-slider-thumb {
+.yui3-skin-rclock .yui3-slider-y .yui3-slider-thumb {
     background-color: #dedede;
     height: 12px;
     width: 18px;
@@ -1599,7 +1599,7 @@ http://nicolasgallagher.com/css-image-replacement-with-pseudo-elements/
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15), -1px -1px 3px rgba(0, 0, 0, 0.15) inset;
 }
 
-.yui3-skin-mine .yui3-slider-y .yui3-slider-rail-cap-top {
+.yui3-skin-rclock .yui3-slider-y .yui3-slider-rail-cap-top {
     background-color: #ededed;
     width: 2px;
     top: -4px;
@@ -1610,7 +1610,7 @@ http://nicolasgallagher.com/css-image-replacement-with-pseudo-elements/
     margin-left: 0.5em;
     border-radius: 2px 2px 0 0;
 }
-.yui3-skin-mine .yui3-slider-y .yui3-slider-rail-cap-bottom {
+.yui3-skin-rclock .yui3-slider-y .yui3-slider-rail-cap-bottom {
     background-color: #ededed;
     width: 2px;
     bottom: -4px;
@@ -1622,30 +1622,30 @@ http://nicolasgallagher.com/css-image-replacement-with-pseudo-elements/
     border-radius: 0 0 2px 2px;
 }
 
-.yui3-skin-mine .yui3-slider-y .yui3-slider-thumb-image,
-.yui3-skin-mine .yui3-slider-y .yui3-slider-thumb-shadow {
+.yui3-skin-rclock .yui3-slider-y .yui3-slider-thumb-image,
+.yui3-skin-rclock .yui3-slider-y .yui3-slider-thumb-shadow {
     display: none;
 }
 
 
 /* .yui-navset defaults to .yui-navset-top */
-.yui3-skin-mine .yui3-tabview-list {
+.yui3-skin-rclock .yui3-tabview-list {
     border:solid #800000; /* color between tab list and content */
     border-width:0 0 5px;
     zoom:1;
 }
 
-.yui3-skin-mine .yui3-tab {
+.yui3-skin-rclock .yui3-tab {
     margin:0 0.2em 0 0;
     padding:1px 0 0; /* gecko: make room for overflow */
     zoom:1;
 }
 
-.yui3-skin-mine .yui3-tab-selected {
+.yui3-skin-rclock .yui3-tab-selected {
     margin-bottom:-1px; /* for overlap (mapped to tabview-list border-width) */
 }
 
-.yui3-skin-mine .yui3-tab-label {
+.yui3-skin-rclock .yui3-tab-label {
     background:    -moz-linear-gradient(top, rgba(252, 252, 252, 0.3) 0%, rgba(182, 180, 180, 0) 49%, rgba(182, 180, 180, 0) 51%, rgba(129, 126, 126, 0.3) 100%);
     background:  -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(252, 252, 252, 0.3)), color-stop(49%, rgba(182, 180, 180, 0)), color-stop(51%, rgba(182, 180, 180, 0)), color-stop(100%,rgba(129, 126, 126, 0.3)));
     background: -webkit-linear-gradient(top, rgba(252, 252, 252, 0.3) 0%, rgba(182, 180, 180, 0) 49%, rgba(182, 180, 180, 0) 51%, rgba(129, 126, 126, 0.3) 100%);
@@ -1665,8 +1665,8 @@ http://nicolasgallagher.com/css-image-replacement-with-pseudo-elements/
     border-radius: 4px 4px 0 0;
 }
 
-.yui3-skin-mine .yui3-tab-label:hover,
-.yui3-skin-mine .yui3-tab-label:focus {
+.yui3-skin-rclock .yui3-tab-label:hover,
+.yui3-skin-rclock .yui3-tab-label:focus {
     background:    -moz-linear-gradient(top, rgba(252, 252, 252, 0.3) 0%, rgba(167, 165, 165, 0) 49%, rgba(167, 165, 165, 0) 51%, rgba(118, 116, 116, 0.3) 100%);
     background:  -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(252, 252, 252, 0.3)), color-stop(49%, rgba(167, 165, 165, 0)), color-stop(51%, rgba(167, 165, 165, 0)), color-stop(100%,rgba(118, 116, 116, 0.3)));
     background: -webkit-linear-gradient(top, rgba(252, 252, 252, 0.3) 0%, rgba(167, 165, 165, 0) 49%, rgba(167, 165, 165, 0) 51%, rgba(118, 116, 116, 0.3) 100%);
@@ -1682,7 +1682,7 @@ http://nicolasgallagher.com/css-image-replacement-with-pseudo-elements/
     outline:0;
 }
 
-.yui3-skin-mine .yui3-tab-selected .yui3-tab-label {
+.yui3-skin-rclock .yui3-tab-selected .yui3-tab-label {
     background:    -moz-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(158, 0, 0, 0) 49%, rgba(158, 0, 0, 0) 51%, rgba(46, 0, 0, 0.3) 100%);
     background:  -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0.3)), color-stop(49%, rgba(158, 0, 0, 0)), color-stop(51%, rgba(158, 0, 0, 0)), color-stop(100%,rgba(46, 0, 0, 0.3)));
     background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(158, 0, 0, 0) 49%, rgba(158, 0, 0, 0) 51%, rgba(46, 0, 0, 0.3) 100%);
@@ -1696,8 +1696,8 @@ http://nicolasgallagher.com/css-image-replacement-with-pseudo-elements/
     border-color: #cc0000 #800000 #800000 #cc0000;
 }
 /* separated out hover state for selected tab */
-.yui3-skin-mine .yui3-tab-selected .yui3-tab-label:hover,
-.yui3-skin-mine .yui3-tab-selected .yui3-tab-label:focus {
+.yui3-skin-rclock .yui3-tab-selected .yui3-tab-label:hover,
+.yui3-skin-rclock .yui3-tab-selected .yui3-tab-label:focus {
     background:    -moz-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(128, 0, 0, 0) 49%, rgba(128, 0, 0, 0) 51%, rgba(31, 0, 0, 0.3) 100%);
     background:  -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0.3)), color-stop(49%, rgba(128, 0, 0, 0)), color-stop(51%, rgba(128, 0, 0, 0)), color-stop(100%,rgba(31, 0, 0, 0.3)));
     background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(128, 0, 0, 0) 49%, rgba(128, 0, 0, 0) 51%, rgba(31, 0, 0, 0.3) 100%);
@@ -1713,11 +1713,11 @@ http://nicolasgallagher.com/css-image-replacement-with-pseudo-elements/
 
 
 
-.yui3-skin-mine .yui3-tab-selected .yui3-tab-label {
+.yui3-skin-rclock .yui3-tab-selected .yui3-tab-label {
     padding: 0.39em 0.75em; /*0.4em 0.75em;*/ /* raise selected tab */
 }
 
-.yui3-skin-mine .yui3-tabview-panel {
+.yui3-skin-rclock .yui3-tabview-panel {
     background-color: #ededed;
     border: 1px solid #dedede;
     color: #404040;
@@ -1725,7 +1725,7 @@ http://nicolasgallagher.com/css-image-replacement-with-pseudo-elements/
 }
 
 
-.yui3-skin-mine .yui3-table {
+.yui3-skin-rclock .yui3-table {
     margin: 0;
     padding: 0;
     font-family: arial, sans-serif;
@@ -1739,19 +1739,19 @@ http://nicolasgallagher.com/css-image-replacement-with-pseudo-elements/
     border: 1px solid #dedede;
 }
 
-.yui3-skin-mine .yui3-table-caption {
+.yui3-skin-rclock .yui3-table-caption {
     color: #adadad;
     font: italic 85%/1 arial, sans-serif;
     padding: 0.98em 0em; /*1em 0;*/
     text-align: center;
 }
-.yui3-skin-mine .yui3-table td {
+.yui3-skin-rclock .yui3-table td {
     background-color: #ededed;
     border-top: 1px solid #dedede; /*  inner row border */
     color: #404040;
 }
-.yui3-skin-mine .yui3-table td,
-.yui3-skin-mine .yui3-table th {
+.yui3-skin-rclock .yui3-table td,
+.yui3-skin-rclock .yui3-table th {
     border-left: 1px solid #dedede; /*  inner column border */
 /*    border-width: 0 0 0 1px;*/
     font-size: inherit;
@@ -1759,12 +1759,12 @@ http://nicolasgallagher.com/css-image-replacement-with-pseudo-elements/
 	overflow: visible; /*to make ths where the title is really long work*/
     padding: 0.29em 0.6em; /*4px 10px 4px 10px;*/ /* cell padding */
 }
-.yui3-skin-mine .yui3-table td:first-child,
-.yui3-skin-mine .yui3-table th:first-child {
+.yui3-skin-rclock .yui3-table td:first-child,
+.yui3-skin-rclock .yui3-table th:first-child {
     border-left-width: 0px;
 }
 
-.yui3-skin-mine .yui3-table th {
+.yui3-skin-rclock .yui3-table th {
     background:    -moz-linear-gradient(top, rgba(252, 252, 252, 0.3) 0%, rgba(215, 214, 214, 0) 49%, rgba(215, 214, 214, 0) 51%, rgba(167, 165, 165, 0.3) 100%);
     background:  -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(252, 252, 252, 0.3)), color-stop(49%, rgba(215, 214, 214, 0)), color-stop(51%, rgba(215, 214, 214, 0)), color-stop(100%,rgba(167, 165, 165, 0.3)));
     background: -webkit-linear-gradient(top, rgba(252, 252, 252, 0.3) 0%, rgba(215, 214, 214, 0) 49%, rgba(215, 214, 214, 0) 51%, rgba(167, 165, 165, 0.3) 100%);
@@ -1787,9 +1787,9 @@ striping:
    even - #fff (white)
    odd  - #edf5ff (light blue)
 */
-.yui3-skin-mine .yui3-table-even td {
+.yui3-skin-rclock .yui3-table-even td {
 }
-.yui3-skin-mine .yui3-table-odd  td  {
+.yui3-skin-rclock .yui3-table-odd  td  {
     background-color: #dedede;
     color: {{cellEvenText}};
 }

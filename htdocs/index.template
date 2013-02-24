@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>R Clock</title>
+		<title>Clock: {location}</title>
+		<!-- Fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Happy+Monkey' rel='stylesheet' type='text/css'>
 		<!-- Master Stylesheet, imports other stylesheets -->
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
-	<body>
-		<header class="yui3-u-3-3">R Clock</header>
-		<noscript>Refresh page to get updated time and weather report</noscript>
+	<body class="yui3-skin-rclock">
+		<header class="yui3-u-3-3"><div id="location">{location}</div></header>
 		<div class="yui3-g">
 			<div id="weather" class="yui3-u-1-3">
-				<div id="location">{location}</div>
-				<ul id="forecast">{forecasts}</ul>
+				<ul id="forecasts">{forecasts}</ul>
 			</div>
 			<div id="clock" class="yui3-u-1-3">{time}</div>
 			<div id="alarms" class="yui3-u-1-3">Alarms, unavailable.</div>
@@ -21,6 +21,7 @@
 		<pre id="debug" class="yui3-3-3"></pre>
 		<!-- END: DEBUG element -->
 		<footer class="yui3-u-3-3">
+		<noscript>Refresh page to get updated time and weather report<br /></noscript>
 		copyright &copy; 2013 R. S. Doiel<br />
 		all rights reserved<br />
 		Released under the <a href="http://opensource.org/licenses/BSD-2-Clause" target="_blank">Simplified BSD License</a>.
