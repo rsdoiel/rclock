@@ -4,7 +4,7 @@
  */
 
 @import url("normalize.css");
-@import url("grids-min.css");
+/**/ @import url("grids-min.css"); /**/
 @import url("rclock-skin.css");
 
 /*
@@ -30,9 +30,7 @@ footer {
 
 #weather {
 	font-size: 1em;
-	padding-top: 1em;
-	padding-left: 0.25em;
-	padding-bottom: 0.5em;
+	padding: 0.25em;
 	text-overflow: ellipsis;
 }
 
@@ -52,8 +50,6 @@ footer {
 
 #alarms {
 	font-size: 1em;
-	padding-top: 1em;
-	padding-left: 0.25em;
-	padding-bottom: 0.5em;
+	padding: 0.25em;
 }
 

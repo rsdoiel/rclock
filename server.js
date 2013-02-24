@@ -24,14 +24,14 @@ YUI({useSync: true, debug: true}).use("io-base", "datatype-date", "yql", functio
 	var server = express();
 
 	// Watch the template file for changes
-	fs.watchFile(path.join("htdocs", "index.template"), function (curr, prev) {
+	fs.watchFile(path.join("htdocs", "index.html"), function (curr, prev) {
 		if (curr.mtime !== prev.mtime) {
 			fs.readFile(path.join("htdocs", "index.html"), function (err, buf) {
 				if  (err) {
 					Y.log(err, "error");
 					return;
 				}
-				Y.log("reloading template " + curr.mtime, "info");
+				Y.log("reloading index.html template " + curr.mtime, "info");
 				template = buf.toString();
 			});
 		}
@@ -48,7 +48,7 @@ YUI({useSync: true, debug: true}).use("io-base", "datatype-date", "yql", functio
 						location_info.city ||
 						location_info.county ||
 						"91350",
-				forecastLI = "<li>{day} {high}/{low} {text}</li>",
+				forecastLI = "<div>{day} {high}/{low} {text}</div>",
 				qry = [
 					'select * from weather.forecast where woeid=',
 					geo_r.query.results.Result.woeid
@@ -67,7 +67,6 @@ YUI({useSync: true, debug: true}).use("io-base", "datatype-date", "yql", functio
 				Y.Array.each(forecasts, function (forecast) {
 					forecasts_text.push(Y.Lang.sub(forecastLI, forecast));
 				});
-				Y.log("Combine and send template", "info");
 				var page = Y.Lang.sub(template, {
 					location: location_text,
 					forecasts: forecasts_text.join("\n"),

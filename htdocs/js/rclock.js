@@ -21,7 +21,7 @@ YUI().use("node", "io", "datatype-date", "yql", "template", function (Y) {
 
 	Y.YQL('select woeid, city from geo.placefinder where name = "91350"', function (geo_r) {
 		var location_info = geo_r.query.results.Result || {};
-		var forecastLI = "<li>{day} {high}/{low} {text}</li>";
+		var forecastLI = "<div>{day} {high}/{low} {text}</div>";
 		var qry = [
 			'select * from weather.forecast where woeid=',
 			geo_r.query.results.Result.woeid
