@@ -49,3 +49,4 @@ YUI().use("node", "io", "datatype-date", "yql", "template", function (Y) {
 		clock.setHTML(Y.Date.format(t, {format: "%l:%M %P"}));
 	}, clock_rate);
 });
+
